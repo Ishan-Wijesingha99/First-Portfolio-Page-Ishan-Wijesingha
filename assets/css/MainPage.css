@@ -338,9 +338,10 @@ html {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
-.projects-and-work-header {
+#projects-and-work-header {
     grid-column: 3 / 7;
     text-align: center;
     align-self: center;
@@ -351,7 +352,6 @@ html {
 
 
 #project-1 {
-    background-color: rgba(255, 0, 0, 0.45);
     grid-column: 3 / 7;
     grid-row: 2 / 5;
     display: flex;
@@ -375,8 +375,16 @@ html {
 #pig-game-image {
     height: 100%;
     width: 100%;
-    opacity: 60%;
+    opacity: 80%;
     object-fit: cover;
+}
+
+#pig-game-image:hover {
+    opacity: 100%;
+}
+
+#corner-text-1:hover {
+    text-decoration: underline;
 }
 
 
@@ -386,10 +394,7 @@ html {
 
 
 
-
-
 #project-2 {
-    background-color: rgba(0, 0, 255, 0.356);
     grid-column: 3 / 5;
     grid-row: 5 / 7;
     display: flex;
@@ -404,15 +409,23 @@ html {
     background-color: var(--lightBlack);
     color: var(--green);
     padding: 18px;
-    border-top: 2.5px solid var(--green);
+    border-top: 5px solid var(--green);
     border-right: 5px solid var(--green);
 }
 
 #guess-my-number-game {
     height: 100%;
     width: 100%;
-    opacity: 60%;
+    opacity: 80%;
     object-fit: cover;
+}
+
+#guess-my-number-game:hover {
+    opacity: 100%;
+}
+
+#corner-text-2:hover {
+    text-decoration: underline;
 }
 
 
@@ -422,7 +435,6 @@ html {
 
 
 #project-3 {
-    background-color: rgba(0, 128, 0, 0.174);
     grid-column: 5 / 7;
     grid-row: 5 / 7;
     display: flex;
@@ -444,15 +456,26 @@ html {
 #kanye-west-image {
     height: 100%;
     width: 100%;
-    opacity: 60%;
+    opacity: 80%;
     object-fit: cover;
+}
+
+#kanye-west-image:hover {
+    opacity: 100%;
+}
+
+#corner-text-3:hover {
+    text-decoration: underline;
 }
 
 
 
 
+
+
+
+
 #project-4 {
-    background-color: rgba(128, 0, 128, 0.247);
     grid-column: 5 / 7;
     grid-row: 7 / 9;
     display: flex;
@@ -472,12 +495,29 @@ html {
     border-right: 5px solid var(--green);
 }
 
+#bankist-website-image {
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    object-fit: cover;
+}
+
+#bankist-website-image:hover {
+    opacity: 100%;
+}
+
+#corner-text-4:hover {
+    text-decoration: underline;
+}
+
+
+
+
 
 
 
 
 #project-5 {
-    background-color: rgba(255, 255, 0, 0.413);
     grid-column: 3 / 5;
     grid-row: 7 / 9;
     display: flex;
@@ -496,6 +536,130 @@ html {
     border-top: 5px solid var(--green);
     border-right: 5px solid var(--green);
 }
+
+#multi-coloured-box {
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    object-fit: cover;
+}
+
+#multi-coloured-box:hover {
+    opacity: 100%;
+}
+
+#corner-text-5:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+@media only screen and (max-width: 1230px) {
+    #corner-text-1, #corner-text-2, #corner-text-3, #corner-text-4, #corner-text-5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+
+    .projects-and-work {
+        grid-template-rows: repeat(13, 1fr);
+    }
+
+    #project-2 {
+        grid-column: 3 / 7;
+        grid-row: 5 / 7;
+    }
+
+    #project-3 {
+        grid-column: 3 / 7;
+        grid-row: 7 / 9;
+    }
+
+    #project-5 {
+        grid-column: 3 / 7;
+        grid-row: 9 / 11;
+    }
+
+    #project-4 {
+        grid-column: 3 / 7;
+        grid-row: 11 / 13;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #corner-text-1, #corner-text-2, #corner-text-3, #corner-text-4, #corner-text-5 {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    #projects-and-work-header {
+        font-size: 26px;
+    }    
+}
+
+
+
+
+
+.contact-me-section {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#contact-me-heading {
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-size: 36px;
+    color: var(--green);
+}
+
+.phone-number {
+    background-color: rgb(151, 38, 38);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.email {
+    background-color: aqua;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.github {
+    background-color: blue;
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.linked-in {
+    background-color: purple;
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-me-section a {
+    display: block;
+    text-align: center;
+}
+
 
 
 
