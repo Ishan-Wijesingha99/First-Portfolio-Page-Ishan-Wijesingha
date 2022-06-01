@@ -1,3 +1,5 @@
+
+/* general CSS */
 :root {
     --font: sans-serif;
     --green: #2ad669;
@@ -23,6 +25,9 @@ html {
 
 
 
+
+
+/* header and nav bar */
 
 .header {
     display: flex;
@@ -136,7 +141,7 @@ html {
 
 
 
-
+/* coding laptop image */
 
 #coding-laptop {
     width: 100%;
@@ -148,6 +153,10 @@ html {
 
 
 
+
+
+
+/* about me section */
 
 #picture-of-me {
     width: 567px;
@@ -197,6 +206,8 @@ html {
     margin-bottom: 0px;
 }
 
+
+
 @media only screen and (max-width: 1270px) {
     .about-me-section {
         display: block;
@@ -233,6 +244,7 @@ html {
 }
 
 
+
 @media only screen and (max-width: 550px) {
     #picture-of-me {
         height: 378px;
@@ -247,89 +259,9 @@ html {
 
 
 
-/* @media only screen and (max-width: 1400px) {
-    #picture-of-me {
-        width: 472.5px;
-        height: 630px;
-    }
-
-    #about-me-heading {
-        font-size: 36px;
-    }
-
-    #intro-text, #javascript-text, #html-css-text, #react-text {
-        font-size: 16px;
-    }
-} */
 
 
-
-
-
-
-
-
-/* 
-
-@media only screen and (max-width: 1100px) {
-    .nav-bar a {
-        font-size: 10px;
-        width: 110px;
-        font-weight: 900;
-    }
-
-    .website-header {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        height: 180px;
-    }
-
-    .website-header {
-        margin: 0px;
-        margin-bottom: 20px;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-    }
-
-    .nav-bar a {
-        margin-bottom: 10px;
-        
-    }
-
-}  */
-
-
-/* @media only screen and (max-width: 1100px) {
-    #picture-of-me {
-        width: 378px;
-        height: 504px;
-    }
-
-    #about-me-heading {
-        font-size: 36px;
-    }
-
-    #intro-text, #javascript-text, #html-css-text, #react-text {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #picture-of-me {
-       
-    }
-
-
-} */
-
-
+/* projects and work section */
 
 .projects-and-work {
     height: 1000px;
@@ -370,6 +302,11 @@ html {
     padding: 18px;
     border-top: 5px solid var(--green);
     border-right: 5px solid var(--green);
+}
+
+#project-1 a {
+    height: 100%;
+    width: 100%;
 }
 
 #pig-game-image {
@@ -413,6 +350,11 @@ html {
     border-right: 5px solid var(--green);
 }
 
+#project-2 a {
+    height: 100%;
+    width: 100%;
+}
+
 #guess-my-number-game {
     height: 100%;
     width: 100%;
@@ -451,6 +393,11 @@ html {
     padding: 18px;
     border-top: 5px solid var(--green);
     border-right: 5px solid var(--green);
+}
+
+#project-3 a {
+    height: 100%;
+    width: 100%;
 }
 
 #kanye-west-image {
@@ -495,6 +442,11 @@ html {
     border-right: 5px solid var(--green);
 }
 
+#project-4 a {
+    height: 100%;
+    width: 100%;
+}
+
 #bankist-website-image {
     height: 100%;
     width: 100%;
@@ -537,6 +489,11 @@ html {
     border-right: 5px solid var(--green);
 }
 
+#project-5 a {
+    height: 100%;
+    width: 100%;
+}
+
 #multi-coloured-box {
     height: 100%;
     width: 100%;
@@ -554,13 +511,13 @@ html {
 
 
 
-
-
 @media only screen and (max-width: 1230px) {
     #corner-text-1, #corner-text-2, #corner-text-3, #corner-text-4, #corner-text-5 {
         font-size: 12px;
     }
 }
+
+
 
 @media only screen and (max-width: 970px) {
 
@@ -590,11 +547,15 @@ html {
 
 }
 
+
+
 @media only screen and (max-width: 600px) {
     #corner-text-1, #corner-text-2, #corner-text-3, #corner-text-4, #corner-text-5 {
         font-size: 10px;
     }
 }
+
+
 
 @media only screen and (max-width: 730px) {
     #projects-and-work-header {
@@ -605,6 +566,10 @@ html {
 
 
 
+
+
+
+/* contact me section */
 
 .contact-me-section {
     height: 400px;
@@ -629,8 +594,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
-
 
 .email {
     grid-column: 8 / 9;
@@ -668,6 +631,10 @@ html {
     padding: 20px 92px;
 }
 
+.github {
+    padding: 20px 40px;
+}
+
 .contact-me-section p {
     font-weight: bold;
     text-decoration: underline;
@@ -683,18 +650,10 @@ html {
 
 
 
-
-
-
-
-.phone-number:hover, .email:hover, .github:hover, .linked-in:hover {
+.email:hover, .github:hover, .linked-in:hover {
     opacity: 60%;
     cursor: pointer;
 }
-
-
-
-
 
 
 
@@ -744,7 +703,7 @@ html {
 
 
 
-
+/* footer section */
 
 .footer {
     margin-top: 50px;
@@ -764,6 +723,8 @@ html {
     font-weight: bold;
     color: var(--lightBlack);
 }
+
+
 
 @media only screen and (max-width: 1100px) {
     #footer-text {
